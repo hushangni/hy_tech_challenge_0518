@@ -189,6 +189,97 @@ input[type=email] {
 
 
 
+/* Main Posts */
+.featured-posts,
+.blog-posts {
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 40px;
+}
+
+.post {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.post h1 {
+	font-size: 0.7em;
+}
+
+.post h3{
+	font-size: 0.55em;
+	margin-bottom: 10px
+}
+
+.post p {
+	font-size: 0.4em;
+}
+
+.post a {
+	font-size: 0.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #f00;
+}
+
+.post a:hover {
+	text-decoration: underline;
+}
+
+.post-content {
+	padding: 15px;
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.overlay-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-text .overlay-link {
+  color: white;
+  font-size: 0.8em;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Featured Posts */
+.featured-posts ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5em;
+	padding: 0;
+}
+
+.featured-posts .post-content {
+	background-color: #fff;
+}
+
+
+
 /* tablet */
 @media only screen and (max-width: 736px) {
 	.top-nav-flex {
