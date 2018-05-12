@@ -3,7 +3,7 @@ font-family: 'Raleway', sans-serif;
 grey background: #F6F7F9
 */
 * {
-	/*border: 1px solid lightblue;*/
+/*	border: 1px solid lightblue;*/
 }
 
 body {
@@ -554,7 +554,8 @@ input[type=email] {
 /* desktop */
 @media only screen and (max-width: 1280px) {
 	.wrapper {
-		width: 80%;
+		max-width: 80%;
+		margin: 0 auto;
 	}
 
 	.main-banner-text {
@@ -739,6 +740,11 @@ input[type=email] {
     }
 
     .bottom-nav li {
-    	font-size: 0.7em;
+    	font-size: 0.65em;
+    	padding-right: 4px;
+    }
+
+    .bottom-nav li:last-child {
+    	padding: 0;
     }
 }
