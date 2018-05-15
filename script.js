@@ -6,7 +6,7 @@ $(document).ready( function() {
 	});
 
 	// Happy subscribe sumit message
-	$('.submit').on('click', function() {
+	$('.submit').on('click touchstart', function() {
 		alert(`Thank you for subscribing to our newsletter!
 		\n (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ ✧ﾟ･: *ヽ(◕ヮ◕ヽ)
 		\n Fun things await your inbox!`);

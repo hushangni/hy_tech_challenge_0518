@@ -1,11 +1,3 @@
-/*font-family: 'Noto Serif', serif;
-font-family: 'Raleway', sans-serif;
-grey background: #F6F7F9
-*/
-* {
-/*	border: 1px solid lightblue;*/
-}
-
 body {
 	font-family: 'Raleway', sans-serif;
 }
@@ -104,7 +96,6 @@ input[type=email] {
   opacity: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.15, 0.8, 0.5, 1);
   transition: all 0.5s cubic-bezier(0.15, 0.8, 0.5, 1);
-
 }
 
 .box:hover {
@@ -256,8 +247,6 @@ input[type=email] {
 	font-size: 0.8em;
 }
 
-
-
 /* Main Posts */
 .featured-posts,
 .blog-posts {
@@ -292,7 +281,7 @@ input[type=email] {
 }
 
 .post a:hover {
-	text-decoration: underline;
+	font-weight: 900;
 }
 
 .post-content {
@@ -313,7 +302,7 @@ input[type=email] {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .3s ease;
   background-color: rgba(255, 0, 0, 0.7);
 }
 
@@ -516,7 +505,7 @@ input[type=email] {
 	width: 30%;
 }
 
-/* bottom black bar */
+/* Bottom Black Bar */
 .footer-bottom {
 	background-color: #221F1F;
 	color: #eee;
@@ -635,6 +624,10 @@ input[type=email] {
 
 /* mobile */
 @media only screen and (max-width: 480px) { 
+	.wrapper {
+		width: 75%;
+	}
+
     .logo {
         float: left;
         padding: 10px 0;
@@ -701,7 +694,7 @@ input[type=email] {
 
     .main-banner-text {
     	height: 70%;
-    	width: 90%;
+    	width: 85%;
     	padding: 30px;
     }
 
