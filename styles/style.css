@@ -51,7 +51,7 @@ a {
 }
 
 .wrapper {
-	max-width: 70%;
+	max-width: 65%;
 	margin: 0 auto;
 }
 
@@ -328,7 +328,7 @@ input[type=email] {
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 1.5em;
+	grid-gap: 2.6em;
 	padding: 0;
 }
 
@@ -345,7 +345,7 @@ input[type=email] {
 	display: grid;
 	grid-template-areas: 
 		"blog blog sidebar";
-	grid-gap: 1.5em;
+	grid-gap: 2.6em;
 }
 
 .blog-grid {
@@ -355,7 +355,7 @@ input[type=email] {
 		"post1 post1"
 		"post2 post3"
 		"cnav cnav";
-	grid-gap: 1.5em;
+	grid-gap: 2.6em;
 }
 
 .post1 {
@@ -540,7 +540,7 @@ input[type=email] {
 	color: #d00;
 }
 
-/* desktop */
+/* smaller desktops */
 @media only screen and (max-width: 1280px) {
 	.wrapper {
 		max-width: 80%;
@@ -550,6 +550,12 @@ input[type=email] {
 	.main-banner-text {
 		height: 70%;
 		width: 70%;
+	}
+	
+	.main-blog-grid,
+	.blog-grid,
+	.featured-posts ul {
+		grid-gap: 1.5em;
 	}
 }
 
